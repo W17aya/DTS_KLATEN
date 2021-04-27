@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title>Membuat form validasi</title>
-</head>j
+</head>
 <body>
 	<h1>Membuat Form Validasi Dengan PHP</h1>
 	<?php
