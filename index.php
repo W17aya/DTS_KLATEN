@@ -4,7 +4,6 @@ $tgl=date('Y-m-d');
 session_start();
 if (isset($_SESSION['sesi'])) {
 	?>
-	<!doctype html>
 	<!DOCTYPE html>
 	<html>
 	<head>
@@ -15,7 +14,7 @@ if (isset($_SESSION['sesi'])) {
 	<div id="container">
 		<div id="header">
 			<div id="logo-perpustakaan-container">
-				<image id="logo-perpustakaan" src="image/logo-perpustakaan3.png" border=0 style="border:0; text-decoration: none; outline:none">
+				<image id="logo-perpustakaan" src="images/logo-perpustakaan3.png" border=0 style="border:0; text-decoration:none; outline:none">
 				</div>
 				<div id="nama-alamat-perpustakaan-container">
 					<div class="nama-alamat-perpustakaan">
@@ -26,23 +25,21 @@ if (isset($_SESSION['sesi'])) {
 					</div>
 				</div>
 			</div>
-			<div id="header-2">
-				<div id="nama-user">Hai <?php echo $_SESSION['sesi']; ?>!</div>
+			<div id="header2">
+				<div id="nama-user">Hai <?php echo$_SESSION['sesi']; ?>!</div>
 			</div>
-		</div>
-		<div id="header-2">
-			<div id="nama-user">Hai <?php echo $_SESSION['sesi']; ?>!</div>
-		</div>
-		</div id="sidebar">
-		<a href="index/php?p=beranda">Beranda</a>
-		<p href="label-navigasi">Data Master</p>
-		<ul>
+			<div id="sidebar">
+				<a href="index.php?p=beranda">Beranda</a>
+				<p class="label-navigasi">Data Master</p>
+				<ul>
 		<li><a href="index.php?p=anggota">Data Anggota</a>
-			<li><a href="index.php?p=buku">Data Buku</a>
-			</ul>
-			<p class="label-navigasi">Data Transaksi</p>
+		<li><a href="index.php?p=buku">Data Buku</a>
 		</ul>
-		<p class="label-navigasi" style="color: white;"><a href="index.php?p=transaksi" style="color: white;">Laporan Transaksi></a></p>
+			<p class="label-navigasi">Data Transaksi</p>
+		<ul>
+		<li><a href="index.php?p=transaksi">Transaksi Peminjaman</a></li>
+		</ul>
+		<p class="label-navigasi" style="color: white;"><a href="index.php?p=transaksi" style="color: white;">Laporan Transaksi</a></p>
 		<a href="logout.php">Logout</a>
 	</div>
 	<div id="content-container">
