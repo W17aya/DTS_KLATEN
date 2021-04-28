@@ -1,27 +1,44 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-
-<head>
-  <title>Sistem Informasi Perpustakaan</title>
-  <link rel="stylesheet" type="text/css" href="custom_css.css">
-  <script type="text/javascript" src="custom_js.js"></script>
-</head>
-
-<body class="background-body">
-  <h1 class="text-white-login"><b>ADMIN PERPUSTAKAAN</b></h1>
-  <div class="box-login">
-    <form method="POST" action="cek_login.php" name="form_daftar" onsubmit="return cekform()">
-      <center>
-        <b class="text-white-login size-text-login">LOGIN</b>
-      </center>
-      <hr class="line-login">
-      <label class="text-white-login">Username</label>
-      <input class="input-login" type="text" name="username" id="txtusername">
-      <label class="text-white-login">Password</label>
-      <input class="input-login" type="password" name="password" id="txtpassword">
-      <button class="button-login" name="submit" type="submit">Log In</button>
-    </form>
-  </div>
-</body>
-
+    <head>
+        <title>Halaman Login</title>
+        <link rel="stylesheet" href="style_login.css">
+    </head>
+   
+    <body>
+		<div style="color:white; position: absolute;left: 510px;top: 120px; 
+		font-size: 30px; background-color: black;">
+			ADMIN PERPUSTAKAAN
+		</div>
+        <div class="container">
+          <h1>Login</h1>
+            <form method="post" action="cek_login.php" onsubmit="return cekform()">
+                <label>Username</label><br>
+                <input type="text" name="username" id="username"><br>
+                <label>Password</label><br>
+                <input type="password" name="password" id="username"><br>
+                <button type="submit"  name="submit">Log in</button>				
+            </form>
+        </div>     
+    </body>
 </html>
+
+<script type="text/javascript">
+    function cekform(){
+    var username = document.getElementById('username');
+    var password = document.getElementById('password');
+    if(username.value == ''){
+        alert('username tidak boleh kosong');
+        username.fokus();
+        return false;
+    } else if(password.value = ''){
+        alert('olahraga belum dipilih');
+        password.fokus();
+        return false;
+    } else {
+        alert('terimakasih telah mengisi form');
+        return true;
+    }
+}
+</script>
+
