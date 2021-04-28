@@ -3,8 +3,8 @@
 
 <head>
   <title>Sistem Informasi Perpustakaan</title>
-  <link rel="stylesheet" type="text/css" href="asset/custom_css.css">
-  <script type="text/javascript" src="asset/custom_js.js"></script>
+  <link rel="stylesheet" type="text/css" href="custom_css.css">
+  <script type="text/javascript" src="custom_js.js"></script>
 </head>
 
 <body class="background-body">

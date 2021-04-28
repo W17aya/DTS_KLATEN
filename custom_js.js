@@ -7,12 +7,8 @@ function cekform(){
 		alert('Username tidak boleh kosong');
 		username.focus();
 		return false;
-	}else if(password.value == ''){
+	}else(password.value == ''){
 		alert('Password tidak boleh kosong');
 		password.focus();
 		return false;
-	}else{
-		alert('terima kasih telah mengisi form');
-		return true;
-	}
 }
