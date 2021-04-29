@@ -57,19 +57,7 @@ if(isset($_SESSION['sesi'])){
 		</div>
     </div>
 		<?php
-			$pages_dir='pages';
-			if(!empty($_GET['p'])){
-				$pages=scandir($pages_dir,0);
-				unset($pages[0],$pages[1]);
-				$p=$_GET['p'];
-				if(in_array($p.'.php',$pages)){
-					include($pages_dir.'/'.$p.'.php');
-				}else{
-					echo'Halaman Tidak Ditemukan';
-				}
-			}else{
-				include($pages_dir.'/beranda.php');
-			}
+			include('pages/beranda.php');
 		?>
 		</div>
 		<div id="footer"><h3>Sistem Informasi Perpustakaan (sipus) | Praktikum </h3></div>

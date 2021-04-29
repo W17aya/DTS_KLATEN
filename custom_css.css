@@ -1,0 +1,49 @@
+.background-body{
+	background-image: url("images/background.jpg");
+	height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  	position: relative;
+}
+.box-login {
+	background-color: lightgrey;
+  	width: 320px;
+	padding: 3rem !important;
+	box-shadow: 6px 10px;
+	margin: auto;
+  	width: 30%;
+}
+.text-white-login{
+	margin-top: 3rem;
+	text-align: center;
+	color: white; 
+}
+.line-login{
+	border: 2px solid white;
+}
+.size-text-login{
+	font-size: 150%;
+}
+.input-login {
+  	width: 100%;
+  	padding: 10px 15px;
+  	margin: 8px 0;
+  	box-sizing: border-box;
+  	border: none;
+  	border-bottom: 2px solid white;
+}
+.button-login{
+	background-color: blue;
+	width: 100%;
+  	border: none;
+  	color: white;
+  	padding: 10px 22px;
+  	text-align: center;
+  	text-decoration: none;
+  	display: inline-block;
+  	font-size: 16px;
+  	cursor: pointer;
+  	margin-top: 4px;
+  	font-weight: bold;
+}
