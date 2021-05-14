@@ -1,5 +1,5 @@
 <?php
-include "./koneksi.php";
+include ".koneksi.php";
 ?>
 <div id="label-page"><h3>Tampil Data Buku</h3></div>
 <div id="content">

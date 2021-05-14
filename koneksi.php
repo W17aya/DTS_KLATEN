@@ -3,7 +3,7 @@
 $server = "localhost:3306";
 $user = "root";
 $password = "";
-$nama_database = "perpustakaan_v1_db";
+$nama_database = "dts_klaten";
 
 $db = mysqli_connect($server, $user, $password, $nama_database);
 

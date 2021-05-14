@@ -1,5 +1,5 @@
 <?php
-include'koneksi.php';
+include'./koneksi.php';
 $tgl=date('Y-m-d');
 session_start();
 if(isset($_SESSION['sesi'])){
